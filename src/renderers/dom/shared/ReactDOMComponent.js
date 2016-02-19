@@ -299,10 +299,7 @@ function enqueuePutListener(id, registrationName, listener, transaction) {
   }
   var container = ReactMount.findReactContainerForID(id);
   if (container) {
-    var doc = container.nodeType === ELEMENT_NODE_TYPE ?
-      container.ownerDocument :
-      container;
-    listenTo(registrationName, doc);
+    listenTo(registrationName, container);
   }
   transaction.getReactMountReady().enqueue(putListener, {
     id: id,
