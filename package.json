@@ -14,7 +14,6 @@
     "envify": "^3.0.0",
     "eslint": "^1.5.1",
     "eslint-plugin-react": "^3.4.2",
-    "eslint-plugin-react-internal": "file:eslint-rules",
     "fbjs": "^0.6.1",
     "fbjs-scripts": "^0.2.0",
     "grunt": "^0.4.5",
